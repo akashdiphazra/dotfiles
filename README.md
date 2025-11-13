@@ -5,6 +5,7 @@ This README outlines the configuration steps for the following Linux tools:
 - [Kitty](https://sw.kovidgoyal.net/kitty/)
 - [Starship Prompt](https://starship.rs/)
 - [Neovim](https://neovim.io/)
+- [lazyvim](https://www.lazyvim.org/)
 
 ---
 
