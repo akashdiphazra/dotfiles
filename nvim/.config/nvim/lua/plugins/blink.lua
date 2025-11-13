@@ -1,5 +1,6 @@
 return {
   "saghen/blink.cmp",
+  lazy = true,
   event = "VeryLazy",
   dependencies = {
     "rafamadriz/friendly-snippets",
@@ -21,7 +22,7 @@ return {
       menu = { auto_show = true, border = "rounded", scrollbar = true },
       documentation = {
         auto_show = true,
-        auto_show_delay_ms = 200,
+        auto_show_delay_ms = 500,
         treesitter_highlighting = true,
         window = { border = "rounded", scrollbar = true },
       },
