@@ -1,2 +1,0 @@
-# MyDotFiles
-Pesonal Configuration Files
