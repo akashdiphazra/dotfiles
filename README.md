@@ -10,6 +10,6 @@ This README outlines the configuration steps for the following Linux tools:
 ---
 
 ```
-git clone [repo name]
+git clone [repo name] && cd dotfiles
 stow . 
 ```
