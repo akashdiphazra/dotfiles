@@ -49,7 +49,7 @@ return {
       layouts = {
         sidebar = {
           layout = {
-            backdrop = true,
+            backdrop = false,
             width = 33,
             min_width = 33,
           },
