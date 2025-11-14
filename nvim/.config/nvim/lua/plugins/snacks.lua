@@ -2,7 +2,7 @@ local my_layout = {
   { preview = true },
   layout = {
     box = "horizontal",
-    height = 29,
+    height = 30,
     width = 95,
     {
       box = "vertical",
@@ -45,7 +45,6 @@ return {
       },
     },
     debug = { enabled = true },
-    explorer = {},
     picker = {
       layouts = {
         sidebar = {
