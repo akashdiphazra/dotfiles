@@ -59,7 +59,7 @@
     "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
     "tooltip-format": "Omarchy update available",
     "signal": 7,
-    "interval": 35000
+    "interval": 3900
   },
   "cpu": {
     "interval": 5,
@@ -87,7 +87,7 @@
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
-    "interval": 3,
+    "interval": 5,
     "spacing": 1,
     "on-click": "omarchy-launch-wifi"
   },
@@ -162,7 +162,7 @@
     }
   },
   "disk": {
-    "interval": 40,
+    "interval": 50,
     "format": "",
     "exec": "{specific_free:0.2f} GB out of {specific_total:0.2f} GB available. Alternatively {free} out of {total} available",
     "tooltip": true,
@@ -194,7 +194,7 @@
   },
   "tray": {
     "icon-size": 12,
-    "spacing": 17
+    "spacing": 17,
   },
   "custom/power": {
     "format": "⏻",
