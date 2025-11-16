@@ -164,9 +164,15 @@
   "disk": {
     "interval": 50,
     "format": "",
-    "exec": "{specific_free:0.2f} GB out of {specific_total:0.2f} GB available. Alternatively {free} out of {total} available",
     "tooltip": true,
+    "tooltip-format": "{specific_free:0.2f} GB out of {specific_total:0.2f} GB available. Alternatively {free} out of {total} available",
     "unit": "GB"
+  },
+  "memory": {
+      "interval": 30,
+      "format": "",
+      "tooltip": true,
+      "tooltip-format": "RAM: {used:0.1f}G/{total:0.1f}G used"
   },
   "group/tray-expander": {
     "orientation": "inherit",
@@ -179,7 +185,8 @@
       "tray",
       "idle_inhibitor",
       "disk",
-      "custom/lockscreen"
+      "custom/lockscreen",
+      "memory",
     ]
   },
   "custom/expand-icon": {
