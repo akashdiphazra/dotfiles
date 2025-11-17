@@ -166,6 +166,7 @@
     "format": "",
     "tooltip": true,
     "tooltip-format": "{specific_free:0.2f} GB out of {specific_total:0.2f} GB available. Alternatively {free} out of {total} available",
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation dysk -a",
     "unit": "GB"
   },
   "memory": {
