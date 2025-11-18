@@ -7,9 +7,10 @@
   "height": 26,
   "modules-left": [
     "custom/omarchy",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
   ],
   "modules-center": [
+    "custom/timezone",
     "clock",
     "custom/update",
     "custom/screenrecording-indicator"
@@ -234,5 +235,12 @@
     "on-click": "hyprlock",
     "tooltip": true,
     "tooltip-format": "Lockscreen"
+  },
+  "custom/timezone": {
+    "format": "󱫭",
+    "tooltip": true,
+    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
+    "tooltip-format": "Timezone:{}",
+    "exec": "timedatectl show -p Timezone --value", 
   }
 }
