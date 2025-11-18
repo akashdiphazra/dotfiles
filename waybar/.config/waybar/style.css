@@ -1,14 +1,11 @@
 @import "../omarchy/current/theme/waybar.css";
 
 * {
-  background-color: @background;
-  color: @foreground;
-
-  border: none;
-  border-radius: 15px;
-  min-height: 0;
   font-family: 'CaskaydiaMono Nerd Font';
+  background: transparent;
+  min-height: 0;
   font-size: 12px;
+  font-weight:600;
 }
 
 .modules-left {
@@ -17,6 +14,23 @@
 
 .modules-right {
   margin-right: 8px;
+}
+
+#waybar {
+    background-color: @background;
+    color: @foreground;
+    border-radius: 20px;
+}
+
+tooltip {
+    padding: 2px;
+    background: @background;
+    border: 2px solid alpha(@foreground, 0.40);
+    border-radius: 20px;
+}
+
+tooltip label {
+    color: @foreground;
 }
 
 #workspaces button {
