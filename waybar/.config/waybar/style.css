@@ -59,6 +59,7 @@ tooltip label {
     color: @foreground;
 }
 
+
 #workspaces button {
   all: initial;
   padding: 0 6px;

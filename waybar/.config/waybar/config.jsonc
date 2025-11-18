@@ -239,8 +239,8 @@
   "custom/timezone": {
     "format": "󱫭",
     "tooltip": true,
-    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
-    "tooltip-format": "Timezone:{}",
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
+    "tooltip-format": "Timezone: {}",
     "exec": "timedatectl show -p Timezone --value", 
   }
 }
