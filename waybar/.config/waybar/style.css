@@ -118,6 +118,7 @@ tooltip label {
 }
 
 #network {
+	margin-left: 5px;
 	margin-right: 11px;
 }
 
@@ -130,7 +131,7 @@ tooltip label {
 }
 
 #custom-expand-icon {
-	margin-right: 15px;
+	margin-right: 13px;
 }
 
 #custom-update {
