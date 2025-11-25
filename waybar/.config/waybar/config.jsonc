@@ -72,7 +72,6 @@
     "format": "{:%d %b %A %I:%M %p}",
     "tooltip": true,
     "tooltip-format": "<big><tt>{calendar}</tt></big>",
-    //"on-click-left": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
     "calendar": {
       "mode": "month",
       "mode-mon-col": 3,
@@ -187,7 +186,7 @@
     "format": "",
     "tooltip": true,
     "tooltip-format": "{specific_free:0.2f} GB out of {specific_total:0.2f} GB available. Alternatively {free} out of {total} available",
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation dysk -a",
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation sudo dysk -a",
     "unit": "GB"
   },
   "memory": {

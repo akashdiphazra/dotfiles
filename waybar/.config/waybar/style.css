@@ -59,7 +59,6 @@ tooltip label {
 	color: @foreground;
 }
 
-
 #workspaces button {
 	all: initial;
 	padding: 0 6px;
@@ -98,8 +97,21 @@ tooltip label {
 	margin-right: 10px;
 }
 
+#idle_inhibitor.activated {
+  animation-name            : blink;
+  animation-duration        : 0.5s;
+  animation-timing-function : linear;
+  animation-iteration-count : infinite;
+  animation-direction       : alternate;
+}
+
 #disk {
 	margin-right: 10px;
+  animation-name            : blink;
+  animation-duration        : 0.5s;
+  animation-timing-function : linear;
+  animation-iteration-count : infinite;
+  animation-direction       : alternate;
 }
 
 #custom-lockscreen {
@@ -158,4 +170,10 @@ tooltip label {
 
 #custom-screenrecording-indicator.active {
 	color: #a55555;
+}
+
+@keyframes blink {
+    to {
+        color: @background;
+    }
 }
