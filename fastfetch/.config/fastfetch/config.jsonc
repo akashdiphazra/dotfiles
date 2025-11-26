@@ -3,42 +3,87 @@
   "logo": {
     "source": "~/.config/fastfetch/Arch.png",
     "type": "kitty",
-    "height": 19,
+    "height": 17,
     "width": 36
   },
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "battery",
-    "poweradapter",
-    "locale",
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
+    },
+    {
+      "type": "host",
+      "key": " PC",
+      "keyColor": "green"
+    },
+    {
+      "type": "cpu",
+      "key": "│ ├",
+      "showPeCoreCount": true,
+      "keyColor": "green"
+    },
+    {
+      "type": "gpu",
+      "key": "│ ├",
+      "detectionMethod": "pci",
+      "keyColor": "green"
+    },
+    {
+      "type": "display",
+      "key": "│ ├󱄄",
+      "keyColor": "green"
+    },
+    {
+      "type": "disk",
+      "key": "│ ├󰋊",
+      "keyColor": "green"
+    },
+    {
+      "type": "memory",
+      "key": "│ ├",
+      "keyColor": "green"
+    },
+    {
+      "type": "swap",
+      "key": "│ ├󰓡",
+      "keyColor": "green"
+    },
+    {
+      "type": "kernel",
+      "key": "└ ├",
+      "keyColor": "green"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌────────────────Age / Uptime / Update───────────────┐"
+    },
     {
       "type": "command",
       "key": "󱦟 OS Age",
+      "keyColor": "magenta",
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
     },
-    "break",
-    "colors",
+    {
+      "type": "uptime",
+      "key": "󱫐 Uptime",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "command",
+      "key": " Update",
+      "keyColor": "magenta",
+      "text": "updated=$(omarchy-version-pkgs); echo \"$updated\""
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break"
   ]
 }
