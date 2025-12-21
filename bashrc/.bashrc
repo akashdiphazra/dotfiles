@@ -1,6 +1,7 @@
 #Export
 export TERM="xterm-256color"                      # getting proper colors
 export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
+export VCPKG_ROOT="/usr/local/vcpkg"
 
 ### "nvim" as manpager
 export MANPAGER="nvim +Man!"
