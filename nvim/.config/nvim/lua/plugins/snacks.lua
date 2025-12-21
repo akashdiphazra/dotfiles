@@ -2,7 +2,7 @@ local my_layout = {
   { preview = true },
   layout = {
     box = "horizontal",
-    height = 30,
+    height = 31,
     width = 95,
     {
       box = "vertical",
